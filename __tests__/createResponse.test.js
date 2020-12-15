@@ -1,4 +1,4 @@
-const createResponse = require('./createResponse');
+const createResponse = require('../lib/utils/createResponse');
 
 describe('createResponse', () => {
   it('creates a valid HTTP response', () => {
