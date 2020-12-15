@@ -8,6 +8,6 @@ describe('app routes', () => {
     expect(response.text).toEqual('hi');
   });
 
-  it('posts status ')
+  // it('posts status ')
   
 });
