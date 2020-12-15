@@ -8,6 +8,20 @@ describe('app routes', () => {
     expect(response.text).toEqual('hi');
   });
 
-  // it('posts status ')
+  it('posts status code 200, request body, and plain text type and prints echo of hi', async() => {
+    const response = await request(app)
+      .post('/echo')
+      .send('hi');
+    expect(response.text).toEqual('hi');
+  });
   
+  it('returns HTML with red', async() => {
+    const response = await request(app)
+      .get('/red');
+    expect(response.text).toEqual('<h1>red<h1>');
+  });
+
+  
+
+
 });
