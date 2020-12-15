@@ -32,6 +32,4 @@ describe('app routes', () => {
       .get('/blue');
     expect(response.text).toEqual('<h1>blue</h1>');
   });
-
-
 });
